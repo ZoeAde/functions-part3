@@ -94,6 +94,14 @@ function testBooleanLogic(array) {
 }
 
 // Define a function called getUniqueValues that takes an array of strings, and returns a new array consisting of the unique values.
-
+function getUniqueValues(arr) {
+   var uniqueArr = [];
+   for(var i in arr){
+        if(uniqueArr.indexOf(arr[i]) === -1){
+            uniqueArr.push(arr[i]);
+        }
+    }
+    return uniqueArr;
+}
 
 
